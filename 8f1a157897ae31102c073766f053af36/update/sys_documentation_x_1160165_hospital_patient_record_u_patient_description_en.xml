@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_patient_description" label="Patient Description" language="en" table="x_1160165_hospital_patient_record">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_patient_description</element>
+            <help/>
+            <hint/>
+            <label>Patient Description</label>
+            <language>en</language>
+            <name>x_1160165_hospital_patient_record</name>
+            <plural>Patient Descriptions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-15 05:45:41</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Patient Description</sys_name>
+            <sys_package display_value="Hospital Management" source="x_1160165_hospital">8f1a157897ae31102c073766f053af36</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+            <sys_update_name>sys_documentation_x_1160165_hospital_patient_record_u_patient_description_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-15 05:45:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

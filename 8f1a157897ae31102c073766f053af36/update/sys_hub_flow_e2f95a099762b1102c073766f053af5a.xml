@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Hospital FLOW</description>
+        <internal_name>hospital_flow</internal_name>
+        <label_cache>[{"name":"79329b05-1150-4620-a40f-4d5a54d627ca.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger - Record Created➛Patient Record Record","reference":"x_1160165_hospital_patient_record","reference_display":"Patient Record","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master_snapshot>9dccd60d9762b1102c073766f053af78</master_snapshot>
+        <name>Hospital FLOW</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>e5ccd60d9762b1102c073766f053afe3</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:40:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2f95a099762b1102c073766f053af5a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Hospital FLOW</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hospital Management" source="x_1160165_hospital">8f1a157897ae31102c073766f053af36</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name>sys_hub_flow_e2f95a099762b1102c073766f053af5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2f95a099762b1102c073766f053af5a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e2f95a099762b1102c073766f053af5a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1160165_hospital_patient_record">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5ccd60d9762b1102c073766f053afe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <table>x_1160165_hospital_patient_record</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e2f95a099762b1102c073766f053af5a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:23</sys_created_on>
+        <sys_id>a1ccd60d9762b1102c073766f053afe4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <trigger display_value="">e5ccd60d9762b1102c073766f053afe3</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e2f95a099762b1102c073766f053af5a^sys_idNOT INa1ccd60d9762b1102c073766f053afe4"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e2f95a099762b1102c073766f053af5a^sys_idNOT IN557c920d9762b1102c073766f053af25"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>557c920d9762b1102c073766f053af25</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=557c920d9762b1102c073766f053af25"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>557c920d9762b1102c073766f053af25</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>957c920d9762b1102c073766f053af26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>557c920d9762b1102c073766f053af25</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>9d7c920d9762b1102c073766f053af26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e2f95a099762b1102c073766f053af5a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e2f95a099762b1102c073766f053af5a^sys_idNOT INeef95a099762b1102c073766f053af5b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e2f95a099762b1102c073766f053af5a</id>
+        <name>Hospital FLOW</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:40:09</sys_created_on>
+        <sys_id>eef95a099762b1102c073766f053af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:40:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=eef95a099762b1102c073766f053af5b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e2f95a099762b1102c073766f053af5a^sys_idNOT IN157c920d9762b1102c073766f053af21,917c920d9762b1102c073766f053af0e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</model>
+        <model_id>e2f95a099762b1102c073766f053af5a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e2f95a099762b1102c073766f053af5a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:50:59</sys_created_on>
+        <sys_id>157c920d9762b1102c073766f053af21</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</model>
+        <model_id>e2f95a099762b1102c073766f053af5a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e2f95a099762b1102c073766f053af5a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:50:59</sys_created_on>
+        <sys_id>917c920d9762b1102c073766f053af0e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=e2f95a099762b1102c073766f053af5a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e2f95a099762b1102c073766f053af5a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e2f95a099762b1102c073766f053af5a^sys_idNOT IN557c920d9762b1102c073766f053af3a,a17c920d9762b1102c073766f053af43,d17c920d9762b1102c073766f053af2d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</flow>
+        <order>3</order>
+        <parent_ui_id>72526f26-7c3b-481a-a522-96cb81d43596</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>557c920d9762b1102c073766f053af3a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:58:20</sys_updated_on>
+        <ui_id>de2e6f9d-f4e1-48df-9e0a-f4bcd8dc6e49</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=557c920d9762b1102c073766f053af3a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>557c920d9762b1102c073766f053af3a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>157c920d9762b1102c073766f053af3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>557c920d9762b1102c073766f053af3a</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>d57c920d9762b1102c073766f053af3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=557c920d9762b1102c073766f053af3a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>557c920d9762b1102c073766f053af3a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>917c920d9762b1102c073766f053af3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>557c920d9762b1102c073766f053af3a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>1d7c920d9762b1102c073766f053af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>557c920d9762b1102c073766f053af3a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>dd7c920d9762b1102c073766f053af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=557c920d9762b1102c073766f053af3a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=557c920d9762b1102c073766f053af3a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</flow>
+        <order>5</order>
+        <parent_ui_id>3a54975f-cbd4-4ef3-9a1a-7ea1d525ac38</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>a17c920d9762b1102c073766f053af43</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:58:21</sys_updated_on>
+        <ui_id>5c0cfd8f-0142-4edf-97d3-ddfcad000d90</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a17c920d9762b1102c073766f053af43"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a17c920d9762b1102c073766f053af43</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>ad7c920d9762b1102c073766f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a17c920d9762b1102c073766f053af43</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>e97c920d9762b1102c073766f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a17c920d9762b1102c073766f053af43"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a17c920d9762b1102c073766f053af43</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>697c920d9762b1102c073766f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a17c920d9762b1102c073766f053af43</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>e17c920d9762b1102c073766f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>a17c920d9762b1102c073766f053af43</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>a57c920d9762b1102c073766f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a17c920d9762b1102c073766f053af43"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a17c920d9762b1102c073766f053af43"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>d17c920d9762b1102c073766f053af2d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:58:20</sys_updated_on>
+        <ui_id>79329b05-1150-4620-a40f-4d5a54d627ca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d17c920d9762b1102c073766f053af2d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d17c920d9762b1102c073766f053af2d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>957c920d9762b1102c073766f053af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d17c920d9762b1102c073766f053af2d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>d17c920d9762b1102c073766f053af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d17c920d9762b1102c073766f053af2d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>d17c920d9762b1102c073766f053af2d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>9d7c920d9762b1102c073766f053af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{static.62826bf03710200044e0bfc8bcbe5df1}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>d17c920d9762b1102c073766f053af2d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>d97c920d9762b1102c073766f053af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d17c920d9762b1102c073766f053af2d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>d17c920d9762b1102c073766f053af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>d17c920d9762b1102c073766f053af2d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>517c920d9762b1102c073766f053af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d17c920d9762b1102c073766f053af2d^sys_idNOT IN117c920d9762b1102c073766f053af2f"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>record</input_name>
+        <instance>d17c920d9762b1102c073766f053af2d</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"record":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>117c920d9762b1102c073766f053af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d17c920d9762b1102c073766f053af2d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e2f95a099762b1102c073766f053af5a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e2f95a099762b1102c073766f053af5a^sys_idNOT IN117c920d9762b1102c073766f053af3d,157c920d9762b1102c073766f053af32"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5d7c920d9762b1102c073766f053af3c</block>
+        <comment/>
+        <connected_to>72526f26-7c3b-481a-a522-96cb81d43596</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>117c920d9762b1102c073766f053af3d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <ui_id>3a54975f-cbd4-4ef3-9a1a-7ea1d525ac38</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=117c920d9762b1102c073766f053af3d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=117c920d9762b1102c073766f053af3d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=117c920d9762b1102c073766f053af3d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1d7c920d9762b1102c073766f053af31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>157c920d9762b1102c073766f053af32</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <ui_id>72526f26-7c3b-481a-a522-96cb81d43596</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=157c920d9762b1102c073766f053af32"/>
+    <sys_element_mapping action="delete_multiple" query="id=157c920d9762b1102c073766f053af32"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>157c920d9762b1102c073766f053af32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>117c920d9762b1102c073766f053af36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{79329b05-1150-4620-a40f-4d5a54d627ca.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=157c920d9762b1102c073766f053af32"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=157c920d9762b1102c073766f053af32"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e2f95a099762b1102c073766f053af5a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e2f95a099762b1102c073766f053af5a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e2f95a099762b1102c073766f053af5a^sys_idNOT IN557c920d9762b1102c073766f053af23,d17c920d9762b1102c073766f053af20"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e2f95a099762b1102c073766f053af5a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:51:00</sys_created_on>
+        <sys_id>557c920d9762b1102c073766f053af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hospital Management" source="x_1160165_hospital">8f1a157897ae31102c073766f053af36</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:51:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e2f95a099762b1102c073766f053af5a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:50:59</sys_created_on>
+        <sys_id>d17c920d9762b1102c073766f053af20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hospital Management" source="x_1160165_hospital">8f1a157897ae31102c073766f053af36</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:50:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e2f95a099762b1102c073766f053af5a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e2f95a099762b1102c073766f053af5a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e2f95a099762b1102c073766f053af5a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Hospital FLOW</description>
+        <internal_name>hospital_flow</internal_name>
+        <label_cache>[{"name":"79329b05-1150-4620-a40f-4d5a54d627ca.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger - Record Created➛Patient Record Record","reference":"x_1160165_hospital_patient_record","reference_display":"Patient Record","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Hospital FLOW</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Hospital FLOW">e2f95a099762b1102c073766f053af5a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9dccd60d9762b1102c073766f053af78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:21</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9dccd60d9762b1102c073766f053af78"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9dccd60d9762b1102c073766f053af78"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9dccd60d9762b1102c073766f053af78^sys_idNOT IN61ccd60d9762b1102c073766f053afc6"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>61ccd60d9762b1102c073766f053afc6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=61ccd60d9762b1102c073766f053afc6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>61ccd60d9762b1102c073766f053afc6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>69ccd60d9762b1102c073766f053afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>61ccd60d9762b1102c073766f053afc6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>a5ccd60d9762b1102c073766f053afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9dccd60d9762b1102c073766f053af78"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9dccd60d9762b1102c073766f053af78^sys_idNOT IN1dccd60d9762b1102c073766f053af79"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9dccd60d9762b1102c073766f053af78</id>
+        <name>Hospital FLOW</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:21</sys_created_on>
+        <sys_id>1dccd60d9762b1102c073766f053af79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:21</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1dccd60d9762b1102c073766f053af79"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9dccd60d9762b1102c073766f053af78^sys_idNOT IN91ccd60d9762b1102c073766f053af7b,ddccd60d9762b1102c073766f053af90"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</model>
+        <model_id>9dccd60d9762b1102c073766f053af78</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9dccd60d9762b1102c073766f053af78</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:21</sys_created_on>
+        <sys_id>91ccd60d9762b1102c073766f053af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</model>
+        <model_id>9dccd60d9762b1102c073766f053af78</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9dccd60d9762b1102c073766f053af78</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>ddccd60d9762b1102c073766f053af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=9dccd60d9762b1102c073766f053af78"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9dccd60d9762b1102c073766f053af78"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9dccd60d9762b1102c073766f053af78^sys_idNOT IN29ccd60d9762b1102c073766f053afb5,61ccd60d9762b1102c073766f053afbe,61ccd60d9762b1102c073766f053afc4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>29ccd60d9762b1102c073766f053afb5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <ui_id>79329b05-1150-4620-a40f-4d5a54d627ca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=29ccd60d9762b1102c073766f053afb5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>29ccd60d9762b1102c073766f053afb5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>21ccd60d9762b1102c073766f053afb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>29ccd60d9762b1102c073766f053afb5</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>6dccd60d9762b1102c073766f053afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=29ccd60d9762b1102c073766f053afb5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>29ccd60d9762b1102c073766f053afb5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>29ccd60d9762b1102c073766f053afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{static.62826bf03710200044e0bfc8bcbe5df1}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>29ccd60d9762b1102c073766f053afb5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>65ccd60d9762b1102c073766f053afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>29ccd60d9762b1102c073766f053afb5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>a1ccd60d9762b1102c073766f053afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>29ccd60d9762b1102c073766f053afb5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>e9ccd60d9762b1102c073766f053afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=29ccd60d9762b1102c073766f053afb5^sys_idNOT IN69ccd60d9762b1102c073766f053afb6"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>record</input_name>
+        <instance>29ccd60d9762b1102c073766f053afb5</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"record":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>69ccd60d9762b1102c073766f053afb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=29ccd60d9762b1102c073766f053afb5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</flow>
+        <order>3</order>
+        <parent_ui_id>72526f26-7c3b-481a-a522-96cb81d43596</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>61ccd60d9762b1102c073766f053afbe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <ui_id>de2e6f9d-f4e1-48df-9e0a-f4bcd8dc6e49</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=61ccd60d9762b1102c073766f053afbe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>61ccd60d9762b1102c073766f053afbe</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>6dccd60d9762b1102c073766f053afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>61ccd60d9762b1102c073766f053afbe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>a9ccd60d9762b1102c073766f053afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=61ccd60d9762b1102c073766f053afbe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>61ccd60d9762b1102c073766f053afbe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>29ccd60d9762b1102c073766f053afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>61ccd60d9762b1102c073766f053afbe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>a1ccd60d9762b1102c073766f053afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>61ccd60d9762b1102c073766f053afbe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>65ccd60d9762b1102c073766f053afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=61ccd60d9762b1102c073766f053afbe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=61ccd60d9762b1102c073766f053afbe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</flow>
+        <order>5</order>
+        <parent_ui_id>3a54975f-cbd4-4ef3-9a1a-7ea1d525ac38</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>61ccd60d9762b1102c073766f053afc4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <ui_id>5c0cfd8f-0142-4edf-97d3-ddfcad000d90</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=61ccd60d9762b1102c073766f053afc4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>61ccd60d9762b1102c073766f053afc4</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>6dccd60d9762b1102c073766f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value>x_1160165_hospital_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>61ccd60d9762b1102c073766f053afc4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>a9ccd60d9762b1102c073766f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=61ccd60d9762b1102c073766f053afc4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>61ccd60d9762b1102c073766f053afc4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>29ccd60d9762b1102c073766f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>61ccd60d9762b1102c073766f053afc4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>a1ccd60d9762b1102c073766f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>61ccd60d9762b1102c073766f053afc4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>65ccd60d9762b1102c073766f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=61ccd60d9762b1102c073766f053afc4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=61ccd60d9762b1102c073766f053afc4"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9dccd60d9762b1102c073766f053af78"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9dccd60d9762b1102c073766f053af78^sys_idNOT INd1ccd60d9762b1102c073766f053af9f,d9ccd60d9762b1102c073766f053af9b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5d7c920d9762b1102c073766f053af3c</block>
+        <comment/>
+        <connected_to>72526f26-7c3b-481a-a522-96cb81d43596</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>d1ccd60d9762b1102c073766f053af9f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <ui_id>3a54975f-cbd4-4ef3-9a1a-7ea1d525ac38</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d1ccd60d9762b1102c073766f053af9f"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d1ccd60d9762b1102c073766f053af9f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d1ccd60d9762b1102c073766f053af9f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1d7c920d9762b1102c073766f053af31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital FLOW">9dccd60d9762b1102c073766f053af78</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>d9ccd60d9762b1102c073766f053af9b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <ui_id>72526f26-7c3b-481a-a522-96cb81d43596</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d9ccd60d9762b1102c073766f053af9b"/>
+    <sys_element_mapping action="delete_multiple" query="id=d9ccd60d9762b1102c073766f053af9b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d9ccd60d9762b1102c073766f053af9b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>1dccd60d9762b1102c073766f053af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{79329b05-1150-4620-a40f-4d5a54d627ca.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d9ccd60d9762b1102c073766f053af9b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d9ccd60d9762b1102c073766f053af9b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9dccd60d9762b1102c073766f053af78"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9dccd60d9762b1102c073766f053af78"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9dccd60d9762b1102c073766f053af78^sys_idNOT IN55ccd60d9762b1102c073766f053af95,99ccd60d9762b1102c073766f053af8d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9dccd60d9762b1102c073766f053af78</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>55ccd60d9762b1102c073766f053af95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hospital Management" source="x_1160165_hospital">8f1a157897ae31102c073766f053af36</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9dccd60d9762b1102c073766f053af78</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:22</sys_created_on>
+        <sys_id>99ccd60d9762b1102c073766f053af8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hospital Management" source="x_1160165_hospital">8f1a157897ae31102c073766f053af36</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">8f1a157897ae31102c073766f053af36</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9dccd60d9762b1102c073766f053af78"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9dccd60d9762b1102c073766f053af78"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9dccd60d9762b1102c073766f053af78"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e2f95a099762b1102c073766f053af5a</sys_id>
+        <latest_snapshot>9dccd60d9762b1102c073766f053af78</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch7a-09-28-2023_10-10-2023_1258.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e2f95a099762b1102c073766f053af5a^sys_idNOT IN29ccd60d9762b1102c073766f053afe5"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"29ccd60d9762b1102c073766f053afe5","name":"plan","plan_signature":null}}</plan>
+        <plan_id>e2f95a099762b1102c073766f053af5a</plan_id>
+        <snapshot>b42e9e4d9762b1102c073766f053afa1</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-15 04:52:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>29ccd60d9762b1102c073766f053afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-15 04:52:23</sys_updated_on>
+        <trigger display_value="">e5ccd60d9762b1102c073766f053afe3</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e2f95a099762b1102c073766f053af5a"/>
+</record_update>
